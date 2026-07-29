@@ -1,7 +1,7 @@
   
 // Wishlist Product entry
 .product-entry {
-  @apply h-full transition-shadow duration-300 bg-white hover:shadow-default rounded-lg justify-between flex relative;
+  @apply h-full transition-shadow duration-300 bg-ivory rounded-none justify-between flex relative;
 
   &--wishlist {
     @apply justify-between p-4 flex-col sm:flex-row;

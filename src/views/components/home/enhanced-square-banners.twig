@@ -14,9 +14,9 @@
     <div class="grid {{ component.banners|length <= 3 ? 'md:grid-cols-' ~ component.banners|length : 'md:grid-cols-3 two-row' }} grid-flow-row gap-3 sm:gap-8">
         {% for index, banner in component.banners %}
             <a  href="{{banner.url}}" aria-label="{{ (banner.title ? banner.title : 'square-banner-' ~ index) | e('html_attr') }}" class="banner-entry lazy {{banner.title ? 'has-overlay' : ''}} {{ component.banners|length <= 3 ? "h-lg-banner" : "h-banner" }}" data-bg="{{ banner.image }}">
-                <article class="banner-entry__text text-with-border">
-                    <h3 class="banner__title font-bold mb-1 leading-6">{{banner.title}}</h3>
-                    <p class="banner__description">{{banner.description}}</p>
+                <article class="banner-entry__text">
+                    <h3 class="banner__title font-heading text-2xl md:text-3xl mb-2 text-ivory drop-shadow-sm">{{banner.title}}</h3>
+                    <p class="banner__description text-sm tracking-lizzle-wide text-ivory/90">{{banner.description}}</p>
                 </article>
             </a>
         {% endfor %}

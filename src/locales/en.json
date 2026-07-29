@@ -3,6 +3,12 @@
     "header": {
       "cart": "Cart"
     },
+    "footer": {
+      "newsletter_label": "Join The House",
+      "newsletter_title": "Subscribe to our Newsletter",
+      "newsletter_subtitle": "Receive updates on new collections, exclusive releases, and behind the scenes.",
+      "pages_links": "Important Links"
+    },
     "appBanner": {
       "download_now": "download now"
     }

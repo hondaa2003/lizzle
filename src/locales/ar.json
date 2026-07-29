@@ -3,6 +3,12 @@
     "header": {
       "cart": "السلة"
     },
+    "footer": {
+      "newsletter_label": "انضمي لعالمنا",
+      "newsletter_title": "اشتركي في القائمة البريدية",
+      "newsletter_subtitle": "احصلي على أحدث المجموعات، الإصدارات الحصرية، وكواليس التصميم.",
+      "pages_links": "روابط هامة"
+    },
     "appBanner": {
       "download_now": "حمله الان"
     }
