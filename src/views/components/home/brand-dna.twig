@@ -1,0 +1,35 @@
+{#
+| Variable                | Type       | Description                                                                  |
+|-------------------------|------------|------------------------------------------------------------------------------|
+| component               | object     | Contains merchant settings for fields from twilight.json `component` section |
+| component.label         | ?string    | Section label text                                                           |
+| component.subtitle      | ?string    | Section subtitle                                                             |
+| component.items         | object[]   | List of brand DNA words/values                                               |
+| component.items[].word  | string     | Individual DNA word                                                          |
+| position                | int        | Sorting number start from zero                                               |
+#}
+<section data-testid="store-home-brand-dna" class="s-block s-block--brand-dna">
+    <div class="container py-16 md:py-24 text-center">
+        {% if component.label %}
+            <p class="text-xs tracking-lizzle-wide uppercase opacity-50 mb-4">
+                {{ component.label }}
+            </p>
+        {% endif %}
+
+        {% if component.subtitle %}
+            <p class="font-heading text-lg md:text-xl mb-10 opacity-80">
+                {{ component.subtitle }}
+            </p>
+        {% endif %}
+
+        {% if component.items|length %}
+            <div class="flex items-center justify-center gap-3 md:gap-4 flex-wrap max-w-3xl mx-auto">
+                {% for item in component.items %}
+                    <span class="text-xs md:text-sm tracking-lizzle-wide uppercase opacity-70 py-2 px-4 border border-current/20 rounded-sm">
+                        {{ item.word }}
+                    </span>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</section>

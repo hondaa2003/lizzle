@@ -1,0 +1,55 @@
+{#
+| Variable                      | Type     | Description                                                                  |
+|-------------------------------|----------|------------------------------------------------------------------------------|
+| component                     | object   | Contains merchant settings for fields from twilight.json `component` section |
+| component.chapter_label       | ?string  | Chapter/collection label text                                                |
+| component.main_title          | ?string  | Main large title                                                             |
+| component.subtitle            | ?string  | Subtitle text                                                                |
+| component.description         | ?string  | Descriptive paragraph                                                        |
+| component.cta_text            | ?string  | Primary button text                                                          |
+| component.cta_url             | ?string  | Primary button URL                                                           |
+| component.secondary_text      | ?string  | Secondary button text                                                        |
+| component.secondary_url       | ?string  | Secondary button URL                                                         |
+| position                      | int      | Sorting number start from zero                                               |
+#}
+<section data-testid="store-home-hero-editorial" class="s-block s-block--hero-editorial">
+    <div class="container py-16 md:py-24 lg:py-32 text-center">
+        {% if component.chapter_label %}
+            <p class="text-xs md:text-sm tracking-lizzle-wide uppercase opacity-60 mb-6">
+                {{ component.chapter_label }}
+            </p>
+        {% endif %}
+
+        {% if component.main_title %}
+            <h2 class="font-heading text-4xl md:text-6xl lg:text-7xl leading-tight mb-6 tracking-wide">
+                {{ component.main_title }}
+            </h2>
+        {% endif %}
+
+        {% if component.subtitle %}
+            <p class="text-sm md:text-base tracking-lizzle-wide opacity-70 mb-6">
+                {{ component.subtitle }}
+            </p>
+        {% endif %}
+
+        {% if component.description %}
+            <p class="max-w-xl mx-auto text-sm md:text-base leading-relaxed opacity-80 mb-10">
+                {{ component.description }}
+            </p>
+        {% endif %}
+
+        <div class="flex items-center justify-center gap-6 flex-wrap">
+            {% if component.cta_text and component.cta_url %}
+                <a href="{{ component.cta_url }}" class="btn--primary text-xs tracking-lizzle-wide uppercase py-3 px-8 border border-current hover:opacity-80 transition-opacity">
+                    {{ component.cta_text }}
+                </a>
+            {% endif %}
+
+            {% if component.secondary_text and component.secondary_url %}
+                <a href="{{ component.secondary_url }}" class="text-xs tracking-lizzle-wide uppercase opacity-60 hover:opacity-100 transition-opacity underline underline-offset-4">
+                    {{ component.secondary_text }}
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</section>

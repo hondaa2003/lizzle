@@ -1,0 +1,23 @@
+{#
+| Variable                | Type     | Description                                                                  |
+|-------------------------|----------|------------------------------------------------------------------------------|
+| component               | object   | Contains merchant settings for fields from twilight.json `component` section |
+| component.label         | ?string  | Section label text                                                           |
+| component.quote         | ?string  | Manifesto quote text                                                         |
+| position                | int      | Sorting number start from zero                                               |
+#}
+<section data-testid="store-home-brand-manifesto" class="s-block s-block--brand-manifesto">
+    <div class="container py-16 md:py-24 lg:py-32 text-center max-w-4xl mx-auto">
+        {% if component.label %}
+            <p class="text-xs tracking-lizzle-wide uppercase opacity-50 mb-8">
+                {{ component.label }}
+            </p>
+        {% endif %}
+
+        {% if component.quote %}
+            <blockquote class="font-heading text-2xl md:text-3xl lg:text-4xl leading-relaxed tracking-wide opacity-90">
+                "{{ component.quote }}"
+            </blockquote>
+        {% endif %}
+    </div>
+</section>
