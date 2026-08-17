@@ -5,7 +5,7 @@
     },
     "version": "1.0.0",
     "thumbnail": "https://cdn.salla.sa/ZrBEO/MopzhoqpTkDObcKc8Q8n77AuydanfsGXdZO7iinH.jpg",
-    "repository": "https://github.com/joudddn-rgb/lizzle",
+    "repository": "https://github.com/hondaa2003/lizzle",
     "author_email": "Lizzle.a.design@gmail.com",
     "features": [
         "mega-menu",
@@ -376,11 +376,31 @@
                     "searchable": true,
                     "source": "custom",
                     "sources": [
-                        { "label": "تصنيف", "key": "categories", "value": "categories" },
-                        { "label": "منتج", "key": "products", "value": "products" },
-                        { "label": "صفحة تعريفية", "key": "pages", "value": "pages" },
-                        { "label": "التخفيضات", "key": "offers_link", "value": "offers_link" },
-                        { "label": "رابط خارجي", "key": "custom", "value": "custom" }
+                        {
+                            "label": "تصنيف",
+                            "key": "categories",
+                            "value": "categories"
+                        },
+                        {
+                            "label": "منتج",
+                            "key": "products",
+                            "value": "products"
+                        },
+                        {
+                            "label": "صفحة تعريفية",
+                            "key": "pages",
+                            "value": "pages"
+                        },
+                        {
+                            "label": "التخفيضات",
+                            "key": "offers_link",
+                            "value": "offers_link"
+                        },
+                        {
+                            "label": "رابط خارجي",
+                            "key": "custom",
+                            "value": "custom"
+                        }
                     ]
                 },
                 {
@@ -408,9 +428,21 @@
                     "searchable": true,
                     "source": "custom",
                     "sources": [
-                        { "label": "صفحة تعريفية", "key": "pages", "value": "pages" },
-                        { "label": "تصنيف", "key": "categories", "value": "categories" },
-                        { "label": "رابط خارجي", "key": "custom", "value": "custom" }
+                        {
+                            "label": "صفحة تعريفية",
+                            "key": "pages",
+                            "value": "pages"
+                        },
+                        {
+                            "label": "تصنيف",
+                            "key": "categories",
+                            "value": "categories"
+                        },
+                        {
+                            "label": "رابط خارجي",
+                            "key": "custom",
+                            "value": "custom"
+                        }
                     ]
                 }
             ]
@@ -499,15 +531,33 @@
                     "label": "قيم العلامة",
                     "item_label": "قيمة",
                     "value": [
-                        { "items.word": "Modern" },
-                        { "items.word": "Timeless" },
-                        { "items.word": "Refined" },
-                        { "items.word": "Quiet Luxury" },
-                        { "items.word": "Feminine" },
-                        { "items.word": "Architectural" },
-                        { "items.word": "Natural" },
-                        { "items.word": "Craftsmanship" },
-                        { "items.word": "Intentional" }
+                        {
+                            "items.word": "Modern"
+                        },
+                        {
+                            "items.word": "Timeless"
+                        },
+                        {
+                            "items.word": "Refined"
+                        },
+                        {
+                            "items.word": "Quiet Luxury"
+                        },
+                        {
+                            "items.word": "Feminine"
+                        },
+                        {
+                            "items.word": "Architectural"
+                        },
+                        {
+                            "items.word": "Natural"
+                        },
+                        {
+                            "items.word": "Craftsmanship"
+                        },
+                        {
+                            "items.word": "Intentional"
+                        }
                     ],
                     "fields": [
                         {
@@ -679,7 +729,13 @@
                     "multichoice": true,
                     "searchable": true,
                     "required": false,
-                    "conditions": [{ "id": "show_cats", "operation": "=", "value": true }]
+                    "conditions": [
+                        {
+                            "id": "show_cats",
+                            "operation": "=",
+                            "value": true
+                        }
+                    ]
                 },
                 {
                     "id": "links",
@@ -690,9 +746,21 @@
                     "maxLength": 100,
                     "item_label": "رابط",
                     "value": [
-                        { "links.icon": "sicon-packed-box", "links.title": "منتج جاهز", "links.url__type": "offers_link" },
-                        { "links.icon": "sicon-fabric-swatch", "links.title": "خدمة حسب الطلب", "links.url__type": "offers_link" },
-                        { "links.icon": "sicon-cake", "links.title": "أكل ومشروبات", "links.url__type": "offers_link" }
+                        {
+                            "links.icon": "sicon-packed-box",
+                            "links.title": "منتج جاهز",
+                            "links.url__type": "offers_link"
+                        },
+                        {
+                            "links.icon": "sicon-fabric-swatch",
+                            "links.title": "خدمة حسب الطلب",
+                            "links.url__type": "offers_link"
+                        },
+                        {
+                            "links.icon": "sicon-cake",
+                            "links.title": "أكل ومشروبات",
+                            "links.url__type": "offers_link"
+                        }
                     ],
                     "fields": [
                         {
@@ -728,14 +796,36 @@
                             "searchable": true,
                             "source": "custom",
                             "sources": [
-                                { "label": "منتج", "key": "products", "value": "products" },
-                                { "label": "تصنيف", "key": "categories", "value": "categories" },
-                                { "label": "التخفيضات", "key": "offers_link", "value": "offers_link" },
-                                { "label": "رابط خارجي", "key": "custom", "value": "custom" }
+                                {
+                                    "label": "منتج",
+                                    "key": "products",
+                                    "value": "products"
+                                },
+                                {
+                                    "label": "تصنيف",
+                                    "key": "categories",
+                                    "value": "categories"
+                                },
+                                {
+                                    "label": "التخفيضات",
+                                    "key": "offers_link",
+                                    "value": "offers_link"
+                                },
+                                {
+                                    "label": "رابط خارجي",
+                                    "key": "custom",
+                                    "value": "custom"
+                                }
                             ]
                         }
                     ],
-                    "conditions": [{ "id": "show_cats", "operation": "=", "value": false }]
+                    "conditions": [
+                        {
+                            "id": "show_cats",
+                            "operation": "=",
+                            "value": false
+                        }
+                    ]
                 }
             ]
         },
@@ -777,7 +867,10 @@
                             "format": "image",
                             "required": true,
                             "description": "* المقاس المناسب للصورة هو 640×427 بكسل",
-                            "settings": { "height": 427, "width": 640 }
+                            "settings": {
+                                "height": 427,
+                                "width": 640
+                            }
                         },
                         {
                             "type": "items",
@@ -790,9 +883,21 @@
                             "searchable": true,
                             "source": "custom",
                             "sources": [
-                                { "label": "منتج", "key": "products", "value": "products" },
-                                { "label": "تصنيف", "key": "categories", "value": "categories" },
-                                { "label": "رابط خارجي", "key": "custom", "value": "custom" }
+                                {
+                                    "label": "منتج",
+                                    "key": "products",
+                                    "value": "products"
+                                },
+                                {
+                                    "label": "تصنيف",
+                                    "key": "categories",
+                                    "value": "categories"
+                                },
+                                {
+                                    "label": "رابط خارجي",
+                                    "key": "custom",
+                                    "value": "custom"
+                                }
                             ]
                         },
                         {
@@ -967,7 +1072,10 @@
                     "format": "image",
                     "required": true,
                     "description": "* المقاس المناسب للصورة هو 1233×500 بكسل",
-                    "settings": { "height": 580, "width": 1400 }
+                    "settings": {
+                        "height": 580,
+                        "width": 1400
+                    }
                 },
                 {
                     "type": "string",
@@ -1022,9 +1130,21 @@
                     "searchable": true,
                     "source": "custom",
                     "sources": [
-                        { "label": "تصنيف", "key": "categories", "value": "categories" },
-                        { "label": "التخفيضات", "key": "offers_link", "value": "offers_link" },
-                        { "label": "رابط خارجي", "key": "custom", "value": "custom" }
+                        {
+                            "label": "تصنيف",
+                            "key": "categories",
+                            "value": "categories"
+                        },
+                        {
+                            "label": "التخفيضات",
+                            "key": "offers_link",
+                            "value": "offers_link"
+                        },
+                        {
+                            "label": "رابط خارجي",
+                            "key": "custom",
+                            "value": "custom"
+                        }
                     ]
                 }
             ]

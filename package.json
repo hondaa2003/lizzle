@@ -1,11 +1,11 @@
 {
   "name": "theme-lizzle",
-  "version": "1.358.0",
+  "version": "1.0.3",
   "description": "Salla Theme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joudddn-rgb/lizzle.git"
+    "url": "git+https://github.com/hondaa2003/lizzle.git"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
